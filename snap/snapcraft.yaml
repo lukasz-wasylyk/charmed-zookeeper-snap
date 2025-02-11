@@ -33,7 +33,7 @@ apps:
       - network
       - network-bind
       - removable-media
-    install-mode: disable
+    install-mode: enable
     daemon: simple
   keytool:
     command: usr/lib/jvm/java-11-openjdk-amd64/bin/keytool

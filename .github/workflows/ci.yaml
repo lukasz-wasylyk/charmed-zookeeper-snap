@@ -33,7 +33,7 @@ jobs:
 
       - id: upload
         name: Upload built snap job artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: charmed-zookeeper_snap_amd64
           path: charmed-zookeeper_${{ steps.get-version.outputs.version }}_amd64.snap
@@ -48,7 +48,7 @@ jobs:
       - build
     steps:
       - name: Download snap file
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: charmed-zookeeper_snap_amd64
           path: .
